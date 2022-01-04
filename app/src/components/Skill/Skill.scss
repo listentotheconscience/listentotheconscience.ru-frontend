@@ -1,0 +1,35 @@
+.container-skill {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 32px;
+
+    .skill_name {
+        color: white;
+        background-color: #311B92;
+        float: left;
+        width: 99px;
+        height: 32px;
+        margin-top: 1px;
+        margin-right: -1px;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .progressbar-wrapper {
+        border: 1px rgba(0,0,0,0) solid;
+    }
+
+    .progressbar-container {
+        background-color: #161B22;
+        width: 400px;
+        float: right;
+    }
+
+    .progressbar-label {
+        font-size: 18px;
+        color: white;
+    }
+}
+

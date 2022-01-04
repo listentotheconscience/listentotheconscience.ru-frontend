@@ -1,0 +1,40 @@
+.container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 957px;
+}
+.container-about .header-about {
+  align-self: center;
+  font-size: 48px;
+}
+.container-about .person-skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: top;
+  align-items: center;
+  margin-top: 5vw;
+}
+.container-about .person-skills .skills-about {
+  margin-right: 10vw;
+}
+.container-about .person-skills .person {
+  display: flex;
+  flex-direction: row;
+}
+.container-about .person-skills .person .avatar-about {
+  position: static;
+  margin-top: -8vw;
+  margin-bottom: 8vw;
+  border-radius: 100%;
+  transform: scale(0.5);
+}
+.container-about .person-skills .person .person-about {
+  font-size: 32px;
+  width: 350px;
+}
+
+/*# sourceMappingURL=About.css.map */
