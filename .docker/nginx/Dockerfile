@@ -6,7 +6,7 @@ COPY ./package.json ./
 COPY ./package-lock.json ./
 
 RUN npm ci --silent
-COPY ../frontend ./
+COPY . ./
 RUN npm run build
 
 
