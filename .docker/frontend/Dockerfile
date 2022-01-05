@@ -2,8 +2,6 @@ FROM node:alpine as build
 
 WORKDIR /app
 
-ENV PATH /app/node_modules/.bin:$PATH
-
 COPY app/package.json ./
 COPY app/package-lock.json ./
 
