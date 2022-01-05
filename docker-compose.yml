@@ -8,8 +8,6 @@ services:
       dockerfile: ../.docker/frontend/Dockerfile
 
     volumes:
-      - ./:./
-      - ./node_modules
       - /etc/ssl/listentotheconscience.ru.crt:/etc/ssl/listentotheconscience.ru.crt
       - /etc/ssl/listentotheconscience.ru.key:/etc/ssl/listentotheconscience.ru.key
       - /etc/ssl/ca.crt:/etc/ssl/ca.crt
