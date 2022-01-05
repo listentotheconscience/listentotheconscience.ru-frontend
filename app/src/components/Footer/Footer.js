@@ -12,7 +12,7 @@ const Footer = (props) => {
                 <a href="https://github.com/listentotheconscience">
                     <FontAwesomeIcon className="github" icon={faGithub} />
                 </a>
-                <p className="copy">listentotheconscience <b style={{color: 'magenta'}}>&copy; 2022</b></p>
+                <p className="copy">listentotheconscience <b style={{color: '#ff00B5'}}>&copy; 2022</b></p>
             </div>
         </div>
     );
