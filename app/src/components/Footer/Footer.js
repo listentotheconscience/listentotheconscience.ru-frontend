@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = (props) => {
-    const github = require('../../images/GitHub-Mark.eps');
     return (
         <div className="container-footer">
             <div className="social-media">
