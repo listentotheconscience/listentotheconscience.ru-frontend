@@ -2,8 +2,8 @@ FROM node:alpine as build
 
 WORKDIR /app
 
-COPY app/package.json ./
-COPY app/package-lock.json ./
+COPY ./package.json ./
+COPY ./package-lock.json ./
 
 RUN npm ci --silent
 COPY . ./
