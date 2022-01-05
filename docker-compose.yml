@@ -20,7 +20,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: nginx
+    container_name: nginx_site
     restart: unless-stopped
     ports:
       - "443:443"
