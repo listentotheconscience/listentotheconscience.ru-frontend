@@ -4,18 +4,18 @@ services:
   frontend:
     container_name: frontend
     build:
-      context: .
-      dockerfile: .docker/frontend/Dockerfile
+      context: ./app
+      dockerfile: ../.docker/frontend/Dockerfile
 
     volumes:
-      - ./app:/app
-      - /app/node_modules
+      - ./:./
+      - ./node_modules
       - /etc/ssl/listentotheconscience.ru.crt:/etc/ssl/listentotheconscience.ru.crt
       - /etc/ssl/listentotheconscience.ru.key:/etc/ssl/listentotheconscience.ru.key
       - /etc/ssl/ca.crt:/etc/ssl/ca.crt
 
     ports:
-      - "3000:3000"
+      - "3000:443"
 
     environment:
       - CHOKIDAR_USEPOLLING=true
