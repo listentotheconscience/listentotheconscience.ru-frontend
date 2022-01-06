@@ -1,28 +1,44 @@
 .container-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-area: footer;
   width: 100%;
   height: 300px;
   background-color: #161B22;
 }
+@media (max-width: 1024px) {
+  .container-footer {
+    position: relative;
+    margin-top: auto;
+    height: 200px;
+  }
+}
 .container-footer .social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas: "... ... ..." "... social    ..." "... copyright ...";
 }
 .container-footer .social-media .github {
-  align-self: center;
+  grid-area: social;
+  margin-left: 45%;
   height: 96px;
   width: 96px;
   color: black;
   border-radius: 100%;
 }
+@media (max-width: 1024px) {
+  .container-footer .social-media .github {
+    margin-left: 40%;
+  }
+}
 .container-footer .social-media .github:hover {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
 }
+.container-footer .social-media .github .icon {
+  height: 96px;
+  width: 96px;
+}
 .container-footer .social-media .copy {
+  margin-left: 5%;
+  grid-area: copyright;
   font-size: 1rem;
   text-align: center;
   color: #fff;

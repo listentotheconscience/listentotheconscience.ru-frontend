@@ -1,28 +1,46 @@
 .container-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-area: footer;
   width: 100%;
   height: 300px;
   background-color: #161B22;
 
+  @media (max-width: 1024px) {
+      position: relative;
+      margin-top: auto;
+      height: 200px;
+  }
+  
   .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+
+    grid-template-areas:
+      "... ... ..."
+      "... social    ..."
+      "... copyright ...";
 
     .github {
+      @media (max-width: 1024px) {
+          margin-left: 40%;
+      }
+
+      grid-area: social;
+      margin-left: 45%;
       &:hover {
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
       }
-      align-self: center;
+      .icon {
+        height: 96px;
+        width: 96px;
+      }
       height: 96px;
       width: 96px;
       color: black;
       border-radius: 100%;
     }
     .copy {
+      margin-left: 5%;
+      grid-area: copyright;
       font-size: 1rem;
       text-align: center;
       color: #fff;

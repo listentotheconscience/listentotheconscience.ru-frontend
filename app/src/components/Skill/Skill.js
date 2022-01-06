@@ -6,7 +6,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 function Skill(props) {
 
     return (
-        <div className="container-skill">
+        <div className="container-skill" onClick={props.onClick}>
             <div className="skill_name">{props.name}</div>
             <ProgressBar
                 animateOnRender={true}

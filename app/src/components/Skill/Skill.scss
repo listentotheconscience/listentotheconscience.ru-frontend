@@ -1,13 +1,18 @@
 .container-skill {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     width: 500px;
     height: 32px;
+    margin-bottom: 10px;
+
+
+    grid-template-areas:
+        "name bar";
+
 
     .skill_name {
+        grid-area: name;
         color: white;
         background-color: #311B92;
-        float: left;
         width: 99px;
         height: 32px;
         margin-top: 1px;
@@ -15,6 +20,7 @@
         text-align: center;
         line-height: 32px;
         border-radius: 10px 0px 0px 10px;
+
     }
 
     .progressbar-wrapper {
@@ -22,9 +28,19 @@
     }
 
     .progressbar-container {
+        grid-area: bar;
         background-color: #161B22;
         width: 400px;
         float: right;
+
+        @media (max-width: 768px) {
+            width: 300px;
+            margin-right: 22vw;
+        }
+        @media (max-width: 375px) {
+            width: 200px;
+            margin-right: 22vw;
+        }
     }
 
     .progressbar-label {

@@ -1,12 +1,23 @@
 .container-hello {
     background: url("../../images/background.png") no-repeat center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
     width: 100%;
+    grid-area: hello;
     height: 957px;
 
+    grid-template-areas:
+        "topleft topleft top top topright topright"
+        "midleft midleft mid mid midright midright"
+        "midleft midleft mid mid midright midright"
+        "botleft botleft bot bot botright botright";
+
     .text-hello {
+        @media (max-width: 1024px) {
+            margin-left: 3%;
+        }
+        grid-area: mid;
+        margin-top: 10vw;
+
         color: white;
         font-size: 48px;
         text-align: center;

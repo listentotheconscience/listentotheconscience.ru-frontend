@@ -1,44 +1,69 @@
 .container-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     width: 100%;
     height: 957px;
 
-    .header-about {
-        align-self: center;
-        font-size: 48px;
+    grid-area: about;
+    
+    grid-template-areas:
+        "left    header right"
+        "avatar  descr  skills"
+        "avatar  descr  skills"
+        "avatar  descr  skills";
+    
+    @media (max-width: 1024px) {
+        padding-left: 15vw;
+        height: auto;
+        width: auto;
+        grid-template-areas:
+        "left header right"
+        "left avatar right"
+        "left descr  right"
+        "left skills right";
     }
 
-    .person-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        vertical-align: top;
-        align-items: center;
-        margin-top: 5vw;
-
-        .skills-about {
-            margin-right: 10vw;
+    .header-about {
+        @media (max-width: 1024px) {
+            margin-left: -12vw;
+            text-align: center;
         }
 
-        .person {
-            display: flex;
-            flex-direction: row;
+        grid-area: header;
+        font-size: 48px;
+        height: 50px;
+        text-align: center;
+    }
 
-            .avatar-about {
-                position: static;
-                margin-top: -8vw;
-                margin-bottom: 8vw;
-                border-radius: 100%;
-                transform: scale(0.5);
-            }
-
-            .person-about {
-                font-size: 32px;
-                width: 350px;
-            }
+    .skills-about {
+        grid-area: skills;
+        @media (max-width: 1024px) {
+            position: relative;
         }
+    }
+
+    .avatar-about {
+        @media (max-width: 1024px) {
+            position: relative;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            margin-left: 23%;
+            right: 3%;
+        }
+        margin-left: 10vw;
+        grid-area: avatar;
+        border-radius: 100%;
+        width: 256px;
+        height: 256px;
+    }
+
+    .person-about {
+        @media (max-width: 1024px) {
+            position: relative;
+            left: 15%;
+            margin-bottom: 3%;
+        }
+        grid-area: descr;
+        font-size: 32px;
+        width: 350px;
     }
 }

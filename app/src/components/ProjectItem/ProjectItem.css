@@ -6,8 +6,15 @@
   height: 500px;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .container-project_item {
+    position: relative;
+    margin-bottom: 3%;
+  }
+}
 .container-project_item:hover {
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 .container-project_item .card_info img {
   width: 350px;

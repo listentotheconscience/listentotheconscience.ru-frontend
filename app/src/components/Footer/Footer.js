@@ -8,8 +8,8 @@ const Footer = (props) => {
     return (
         <div className="container-footer">
             <div className="social-media">
-                <a href="https://github.com/listentotheconscience">
-                    <FontAwesomeIcon className="github" icon={faGithub} />
+                <a href="https://github.com/listentotheconscience" className="github">
+                    <FontAwesomeIcon icon={faGithub} className="icon" />
                 </a>
                 <p className="copy">listentotheconscience <b style={{color: '#ff00B5'}}>&copy; 2022</b></p>
             </div>

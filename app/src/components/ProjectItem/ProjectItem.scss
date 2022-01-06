@@ -11,8 +11,15 @@
     width: 350px;
     height: 500px;
     position: relative;
+
+    @media (max-width: 1024px) {
+        position: relative;
+        margin-bottom: 3%;
+    }
+    
     &:hover {
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+        cursor: pointer;
     }
     .card_info {
         img {
