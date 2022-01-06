@@ -21,6 +21,9 @@
         line-height: 32px;
         border-radius: 10px 0px 0px 10px;
 
+        @media (max-width: 1024px) {
+            margin-right: -10px;
+        }
     }
 
     .progressbar-wrapper {

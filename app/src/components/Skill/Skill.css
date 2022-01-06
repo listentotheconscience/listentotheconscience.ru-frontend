@@ -17,6 +17,11 @@
   line-height: 32px;
   border-radius: 10px 0px 0px 10px;
 }
+@media (max-width: 1024px) {
+  .container-skill .skill_name {
+    margin-right: -10px;
+  }
+}
 .container-skill .progressbar-wrapper {
   border: 1px rgba(0, 0, 0, 0) solid;
 }
