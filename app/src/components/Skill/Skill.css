@@ -19,7 +19,7 @@
 }
 @media (max-width: 1024px) {
   .container-skill .skill_name {
-    margin-right: -10px;
+    margin-right: 0;
   }
 }
 .container-skill .progressbar-wrapper {
