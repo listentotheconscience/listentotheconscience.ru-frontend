@@ -20,7 +20,7 @@ function About(props) {
                 I've a serious passion for how things work behind the scenes in programs.
                 <br/>
                 <br/>
-                That's why I here.
+                That's why I'm here.
             </div>
         <div className="skills-about">
             {skills.map(skill => (
